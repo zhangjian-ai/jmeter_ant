@@ -62,6 +62,15 @@
               <param name="showData" expression="${show-data}"/>
               <param name="titleReport" expression="${report.title}"/>
               <param name="dateReport" expression="${report.datestamp}"/> 
+              
+	      <param name="start_datetime" expression="${start.report.datestamp}"/>
+              <param name="end_datetime" expression="${end.report.datestamp}"/>
+              <param name="request_url" expression="${jmeter.request.url}"/>
+              <param name="failure_rate" expression="${failure.rate}"/>
+              <param name="Result_log" expression="${Result.log}"/>
+              <param name="Is_show_Result_log" expression="${Is.show.Result.log}"/>
+              <param name="Is_Show_Key_index" expression="${Is.Show.Key.index}"/>
+              <param name="Is_Show_Resource" expression="${Is.Show.Resource}"/>
        </xslt>
                 <!-- 因为上面生成报告的时候，不会将相关的图片也一起拷贝至目标目录，所以，需要手动拷贝 --> 
         <copy todir="${jmeter.result.html.dir}">
