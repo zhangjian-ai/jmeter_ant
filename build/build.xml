@@ -16,7 +16,18 @@
     <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
     <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}${time}.html" />
 
+     <!--设置jmeter生成结果服务器上ip地址 -->
+     <property name="jmeter.request.url" value="http://121.4.47.229" />
+     <!--设置失败率为xx时,html是否标颜色 -->
      <property name="failure.rate" value="0.6" />
+     <!--设置服务器日志地址 -->
+     <property name="Result.log" value="http://www.w3school.com.cn" />
+     <!--是否显示服务器日志地址，0代表显示,1代表不显示 -->
+     <property name="Is.show.Result.log" value="0" />
+     <!--是否显示关键指标(APT、TPS、Throughput、Hit等)图片，0代表显示,1代表不显示 -->
+     <property name="Is.Show.Key.index" value="0" />
+     <!--是否显示资源(CPU、Memory、io、Network等)图片，0代表显示,1代表不显示 -->
+     <property name="Is.Show.Resource" value="0" />
 
     <target name="run">
         <antcall target="test" />
