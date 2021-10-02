@@ -16,6 +16,8 @@
     <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
     <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}${time}.html" />
 
+     <property name="failure.rate" value="0.6" />
+
     <target name="run">
         <antcall target="test" />
         <antcall target="report" />
