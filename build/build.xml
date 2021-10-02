@@ -25,7 +25,8 @@
         <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
         <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
             <!-- 声明要运行的脚本"*.jmx"指包含此目录下的所有jmeter脚本-->
-            <testplans dir="/var/jenkins_home/workspace/jmeter_ant" includes="*.jmx" />
+            <testplans dir="/var/jenkins_home/workspace/jmeter_ant/script_01" includes="*.jmx" />
+            <testplans dir="/var/jenkins_home/workspace/jmeter_ant/script_02" includes="*.jmx" />
 
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
         </jmeter>
